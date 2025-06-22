@@ -65,4 +65,14 @@ function nbSelect(selector, options = {}) {
   }).on("mouseleave", ".nb-has-submenu", function () {
     $(this).find(".nb-submenu").stop(true, true).slideUp(150);
   });
+  $(document).on("click", ".nb-dropdown-toggle", function (e) {
+  e.stopPropagation();
+  const $dropdown = $(this).closest(".nb-dropdown");
+  $(".nb-dropdown").not($dropdown).removeClass("open");
+  $dropdown.toggleClass("open");
+});
+
+$(document).on("click", function () {
+  $(".nb-dropdown").removeClass("open");
+});
 }
