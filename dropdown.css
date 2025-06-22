@@ -13,17 +13,6 @@
   --nb-sub-icon-color: #f39c12;
   --nb-arrow-color: #888;
 }
-
-/* General layout */
-body {
-  font-family: var(--nb-font);
-  background: #eef2f5;
-  padding: 60px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
 .nb-dropdown {
   width: var(--nb-width);
   position: relative;
