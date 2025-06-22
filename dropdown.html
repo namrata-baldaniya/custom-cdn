@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Multi-Level Dropdown</title>
+    <link rel="stylesheet" href="dropdown.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <select class="nbselect-blue">
+      <option value="profile" data-icon="fa-user">Profile</option>
+      <option value="settings" data-icon="fa-cog">Settings</option>
+      <option value="logout" data-icon="fa-right-from-bracket">Logout</option>
+    </select>
+    <select class="nbselect-glass">
+      <option value="view" data-icon="fa-eye">View</option>
+      <option value="edit" data-icon="fa-pen">Edit</option>
+      <option value="delete" data-icon="fa-trash">Delete</option>
+    </select>
+
+    <select class="nbselect-purple">
+      <option value="favorite" data-icon="fa-heart">Favorite</option>
+      <option value="save" data-icon="fa-bookmark">Save</option>
+      <option value="share" data-icon="fa-share">Share</option>
+    </select>
+
+    <select class="nbselect-dark">
+      <option value="notifications" data-icon="fa-bell">Notifications</option>
+      <option value="privcay" data-icon="fa-lock">Privacy</option>
+      <option value="sign-out" data-icon="fa-sign-out">Sign Out</option>
+    </select>
+    <select class="nbselect-orange">
+      <option value="copy" data-icon="fa-copy">Duplicate</option>
+      <option value="download" data-icon="fa-download">Export</option>
+      <option value="trash-can" data-icon="fa-trash-can">Remove</option>
+    </select>
+    <!-- MULTI-LEVEL DROPDOWNS -->
+    <!-- <div class="nb-dropdown nb-theme-blue">
+      <div class="nb-dropdown-toggle">
+        <i class="fa-solid fa-bars"></i> Menu
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+      <ul class="nb-dropdown-menu">
+        <li class="nb-has-submenu">
+          <div class="nb-menu-item">
+            <div class="nb-left-part">
+              <i class="fa-solid fa-user"></i> Profile
+            </div>
+            <i class="fa-solid fa-chevron-right nb-submenu-arrow"></i>
+          </div>
+          <ul class="nb-submenu">
+            <li><i class="fa-solid fa-eye"></i> View</li>
+            <li><i class="fa-solid fa-pen"></i> Edit</li>
+            <li><i class="fa-solid fa-lock"></i> Security</li>
+          </ul>
+        </li>
+        <li><i class="fa-solid fa-cog"></i> Settings</li>
+      </ul>
+    </div>
+
+
+    <div class="nb-dropdown nb-theme-glass">
+      <div class="nb-dropdown-toggle">
+        <i class="fa-solid fa-leaf"></i> Options
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+      <ul class="nb-dropdown-menu">
+        <li class="nb-has-submenu">
+          <div class="nb-menu-item">
+            <div class="nb-left-part"><i class="fa-solid fa-eye"></i> View</div>
+            <i class="fa-solid fa-chevron-right nb-submenu-arrow"></i>
+          </div>
+          <ul class="nb-submenu">
+            <li><i class="fa-solid fa-pen"></i> Edit</li>
+            <li><i class="fa-solid fa-trash"></i> Delete</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="nb-dropdown nb-theme-purple">
+      <div class="nb-dropdown-toggle">
+        <i class="fa-solid fa-star"></i> Features
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+      <ul class="nb-dropdown-menu">
+        <li class="nb-has-submenu">
+          <div class="nb-menu-item">
+            <div class="nb-left-part">
+              <i class="fa-solid fa-heart"></i> Favorite
+            </div>
+            <i class="fa-solid fa-chevron-right nb-submenu-arrow"></i>
+          </div>
+          <ul class="nb-submenu">
+            <li><i class="fa-solid fa-bookmark"></i> Save</li>
+            <li><i class="fa-solid fa-share"></i> Share</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="nb-dropdown nb-theme-dark">
+      <div class="nb-dropdown-toggle">
+        <i class="fa-solid fa-moon"></i> Settings
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+      <ul class="nb-dropdown-menu">
+        <li class="nb-has-submenu">
+          <div class="nb-menu-item">
+            <div class="nb-left-part">
+              <i class="fa-solid fa-bell"></i> Notifications
+            </div>
+            <i class="fa-solid fa-chevron-right nb-submenu-arrow"></i>
+          </div>
+          <ul class="nb-submenu">
+            <li><i class="fa-solid fa-lock"></i> Privacy</li>
+            <li><i class="fa-solid fa-sign-out"></i> Sign Out</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="nb-dropdown nb-theme-orange">
+      <div class="nb-dropdown-toggle">
+        <i class="fa-solid fa-list"></i> Actions
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+      <ul class="nb-dropdown-menu">
+        <li class="nb-has-submenu">
+          <div class="nb-menu-item">
+            <div class="nb-left-part">
+              <i class="fa-solid fa-copy"></i> Duplicate
+            </div>
+            <i class="fa-solid fa-chevron-right nb-submenu-arrow"></i>
+          </div>
+          <ul class="nb-submenu">
+            <li><i class="fa-solid fa-download"></i> Export</li>
+            <li><i class="fa-solid fa-trash-can"></i> Remove</li>
+          </ul>
+        </li>
+      </ul>
+    </div> -->
+
+    <select class="nbselect-blue-menu">
+      <option value="profile" data-icon="fa-user">Profile</option>
+      <option value="settings" data-icon="fa-cog">Settings</option>
+    </select>
+    <select class="nbselect-glass-menu">
+      <option value="view" data-icon="fa-eye">View</option>
+    </select>
+
+    <select class="nbselect-purple-menu">
+      <option value="favorite" data-icon="fa-heart">Favorite</option>
+    </select>
+
+    <select class="nbselect-dark-menu">
+      <option value="notifications" data-icon="fa-bell">Notifications</option>
+    </select>
+
+    <select class="nbselect-orange-menu">
+      <option value="duplicate" data-icon="fa-copy">Duplicate</option>
+    </select>
+
+    <script src="dropdown.js"></script>
+    <script>
+      $(document).ready(function () {
+        nbSelect(".nbselect-blue", {
+          theme: "blue",
+          label: "Menu",
+        });
+        nbSelect(".nbselect-glass", {
+          theme: "glass",
+          label: "Options",
+          icon: "fa-leaf",
+        });
+        nbSelect(".nbselect-purple", {
+          theme: "purple",
+          label: "Features",
+          icon: "fa-star",
+        });
+        nbSelect(".nbselect-dark", {
+          theme: "dark",
+          label: "Settings",
+          icon: "fa-moon",
+        });
+        nbSelect(".nbselect-orange", {
+          theme: "orange",
+          label: "Actions",
+          icon: "fa-bell",
+        });
+        nbSelect(".nbselect-blue-menu", {
+          theme: "blue",
+          label: "Menu",
+          submenus: {
+            profile: [
+              { text: "View", icon: "fa-eye" },
+              { text: "Edit", icon: "fa-pen" },
+              { text: "Security", icon: "fa-lock" },
+            ],
+          },
+        });
+        nbSelect(".nbselect-orange-menu", {
+          theme: "orange",
+          label: "Actions",
+          icon: "fa-bell",
+          submenus: {
+            duplicate: [
+              { text: "Export", icon: "fa-download" },
+              { text: "Remove", icon: "fa-trash-can" },
+            ],
+          },
+        });
+
+        nbSelect(".nbselect-purple-menu", {
+          theme: "purple",
+          label: "Features",
+          icon: "fa-star",
+          submenus: {
+            favorite: [
+              { text: "Save", icon: "fa-bookmark" },
+              { text: "Share", icon: "fa-share" },
+            ],
+          },
+        });
+
+        nbSelect(".nbselect-dark-menu", {
+          theme: "dark",
+          label: "Settings",
+          icon: "fa-moon",
+          submenus: {
+            notifications: [
+              { text: "Privacy", icon: "fa-lock" },
+              { text: "Sign Out", icon: "fa-sign-out" },
+            ],
+          },
+        });
+
+        nbSelect(".nbselect-glass-menu", {
+          theme: "glass",
+          label: "Options",
+          icon: "fa-leaf",
+          submenus: {
+            view: [
+              { text: "Edit", icon: "fa-pen" },
+              { text: "Delete", icon: "fa-trash" },
+            ],
+          },
+        });
+
+        $(document).on("click", ".nb-dropdown-toggle", function (e) {
+          e.stopPropagation();
+          const $dropdown = $(this).closest(".nb-dropdown");
+          $(".nb-dropdown").not($dropdown).removeClass("open");
+          $dropdown.toggleClass("open");
+        });
+
+        $(document).on("click", function () {
+          $(".nb-dropdown").removeClass("open");
+        });
+      });
+    </script>
+  </body>
+</html>
